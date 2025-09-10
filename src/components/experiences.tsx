@@ -36,7 +36,7 @@ export function Experiences() {
             Expériences uniques
           </h2>
           <p className="mt-2 text-muted-foreground">
-            Safaris, croisières, séjours luxe et aventures — vivez l'exception.
+            Safaris, croisières, séjours luxe et aventures — vivez l&apos;exception.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">

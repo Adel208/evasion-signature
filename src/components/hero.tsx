@@ -57,7 +57,7 @@ export function Hero() {
           Explorez le monde avec nous
         </h1>
         <p className="mt-4 max-w-2xl text-white/90 text-base sm:text-lg">
-          Des voyages d'exception, des expériences uniques et un service premium,
+          Des voyages d&apos;exception, des expériences uniques et un service premium,
           conçus sur-mesure pour vous.
         </p>
 

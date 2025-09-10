@@ -22,7 +22,14 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 
-const megaItems = {
+type MegaItem = {
+  title: string;
+  href: string;
+  image: string;
+  desc: string;
+};
+
+const megaItems: Record<string, MegaItem[]> = {
   Destinations: [
     {
       title: "Europe",
@@ -120,14 +127,14 @@ export function Navbar() {
           <div className="hidden md:block">
             <NavigationMenu>
               <NavigationMenuList>
-                {Object.entries(megaItems).map(([label, items]) => (
+                {Object.entries(megaItems).map(([label, items]: [string, MegaItem[]]) => (
                   <NavigationMenuItem key={label}>
                     <NavigationMenuTrigger className="bg-transparent">
                       {label}
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 w-[80vw] max-w-4xl">
-                        {(items as any[]).map((it) => (
+                        {items.map((it: MegaItem) => (
                           <NavigationMenuLink asChild key={it.title} className="block">
                             <Link href={it.href} className="block">
                               <div className="group relative overflow-hidden rounded-xl ring-1 ring-black/5 shadow-sm">

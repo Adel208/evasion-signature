@@ -22,7 +22,7 @@ export function Footer() {
               </span>
             </div>
             <p className="mt-4 text-sm text-white/70 max-w-sm leading-relaxed">
-              Voyages d'exception, expériences uniques et service premium sur-mesure.
+              Voyages d&apos;exception, expériences uniques et service premium sur-mesure.
             </p>
             <div className="mt-5 flex items-center gap-3 text-white/80">
               <Link aria-label="Instagram" href="#" className="rounded-full p-2.5 hover:bg-white/10">
@@ -72,7 +72,7 @@ export function Footer() {
                 className="rounded-xl bg-white text-black hover:bg-white/90 h-12 px-5 text-sm font-medium leading-tight"
                 type="submit"
               >
-                S'abonner
+                S&apos;abonner
               </Button>
             </form>
           </div>
